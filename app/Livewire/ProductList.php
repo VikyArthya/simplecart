@@ -14,7 +14,6 @@ class ProductList extends Component
 
     public function addToCart($id, $name, $price)
     {
-        // Menggunakan dispatch untuk memanggil event
         $this->dispatch('productAdded', ['id' => $id, 'name' => $name, 'price' => $price]);
     }
 
